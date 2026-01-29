@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - CamMart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style5.css">
+</head>
+
+<body>
+    <!-- Navigation (Simplified for Cart) -->
+    <nav class="navbar">
+        <div class="logo">CamMart</div>
+        <div class="nav-links">
+            <a href="index2.html"><i class="fa-solid fa-arrow-left"></i> Continue Shopping</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="cart-header">
+            <h1>Shopping Cart</h1>
+        </header>
+
+        <div class="cart-layout">
+            <!-- Cart Items Section -->
+            <div class="cart-items" id="cart-items-container">
+                <!-- Items will be injected here via JS -->
+                <p class="empty-cart-msg">Your cart is empty.</p>
+            </div>
+
+            <!-- Order Summary Section -->
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <span id="subtotal">₹ 0</span>
+                </div>
+                <p class="shipping-note">Shipping cost calculated at checkout.</p>
+                <div class="divider"></div>
+                <div class="summary-line total">
+                    <span>Total</span>
+                    <span id="total">₹ 0</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script5.js"></script>
+</body>
+
+</html>

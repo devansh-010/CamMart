@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CamMart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main_box"> <input type="checkbox" id="check" />
+    <div class="btn_one"> <label for="check" style="color: white"> <i class="fa-solid fa-bars"></i> </label> </div>
+    <div class="tag">
+      <p class="name">CamMart</p>
+      <p class="line">Where Every Shot Begins</p>
+
+      <div class="cta">
+        <button class="primary" onclick="window.location.href='index2.html'">Shop Cameras</button>
+        <button class="secondary">Explore Accessories</button>
+      </div>
+
+      <div class="brands">
+        <a href="index2.html?brand=canon"><img src="./assets1/canon.png" alt="canon"></a>
+        <a href="index2.html?brand=sony"><img src="./assets1/sony.png" alt="sony"></a>
+        <a href="index2.html?brand=nikon"><img src="./assets1/nikon.png" alt="nikon"></a>
+        <a href="index2.html?brand=fujifilm"><img src="./assets1/fujifilm.png" alt="fujifilm"></a>
+        <a href="index2.html?brand=panasonic"><img src="./assets1/panasonic.png" alt="panasonic"></a>
+      </div>
+
+      <div class="parts">
+        <button onclick="window.location.href='index2.html?category=dslr'">DSLR</button>
+        <button onclick="window.location.href='index2.html?category=mirrorless'">Mirrorless</button>
+        <button>Lenses</button>
+        <button>Tripods</button>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <a href="index5.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+      <div class="log">
+        <a href="index3.html">Log in</a>
+        <span>/</span>
+        <a href="index3.html?action=signup">Sign up</a>
+      </div>
+    </div>
+    <div class="sidebar_menu">
+      <div class="logo"> <a href="#">CamMart</a> </div>
+      <div class="btn_two"> <label for="check" style="color: grey"> <i class="fa-solid fa-xmark"></i> </label> </div>
+      <div class="menu">
+        <ul>
+          <li> <i class="fa-solid fa-image"></i> <a href="#">Gallery</a> </li>
+          <li> <i class="fa-solid fa-arrow-up-right-from-square"></i> <a href="#">Shortcuts</a> </li>
+          <li> <i class="fa-solid fa-photo-film"></i> <a href="#">Exhibits</a> </li>
+          <li> <i class="fa-solid fa-calendar-days"></i> <a href="#">Events</a> </li>
+          <li> <i class="fa-solid fa-store"></i> <a href="index2.html">Store</a> </li>
+          <li> <i class="fa-solid fa-phone"></i> <a href="#">Contact</a> </li>
+          <li> <i class="fa-regular fa-comments"></i> <a href="#">Feedback</a> </li>
+        </ul>
+      </div>
+      <div class="social_media">
+        <ul> <a href="#"><i class="fa-brands fa-facebook"></i></i></a> <a href="#"><i
+              class="fa-brands fa-twitter"></i></a> <a href="#"><i class="fa-brands fa-instagram"></i></i></a> <a
+            href="#"><i class="fa-brands fa-youtube"></i></a> </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

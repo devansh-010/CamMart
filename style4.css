@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.main_box {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('photo.png');
+    /* Assuming same bg as other pages if available, or just dark */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sidebar Menu - Reused from other pages style */
+#check {
+    display: none;
+}
+
+.btn_one i {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    top: 5px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.sidebar_menu {
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all .3s linear;
+    z-index: 99;
+}
+
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    height: 60px;
+}
+
+.sidebar_menu .logo a {
+    position: absolute;
+    left: 50px;
+    text-decoration: none;
+    color: #111;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar_menu .btn_two i {
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+    transition: all .3s linear;
+}
+
+.sidebar_menu .menu i {
+    color: #111;
+    font-size: 20px;
+    padding-bottom: 2px;
+    margin-right: 12px;
+}
+
+.sidebar_menu .menu a {
+    text-decoration: none;
+    color: #111;
+    font-size: 16px;
+}
+
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    border-right: 4px solid #111;
+}
+
+.sidebar_menu .social_media {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidebar_menu .social_media i {
+    color: #111;
+    font-size: 22px;
+    margin: 0 10px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#check:checked~.sidebar_menu {
+    left: 0;
+}
+
+#check:checked~.btn_one i {
+    opacity: 0;
+}
+
+#check:checked~.sidebar_menu .btn_two i {
+    opacity: 1;
+}
+
+
+/* Product Box */
+.product-container {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    margin-top: 60px;
+    /* Space for top bar/menu */
+}
+
+.product-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    /* Ensure image doesn't overflow rounded corners */
+    padding: 0;
+    /* Remove padding to let image cover */
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cover the entire section */
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.product-details {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    color: #fff;
+    transform: translateX(-5px);
+}
+
+.product-details h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.product-details .price {
+    font-size: 32px;
+    color: #e63946;
+    /* Accent color */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.product-details .desc {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.specs {
+    margin-bottom: 30px;
+}
+
+.specs li {
+    list-style: none;
+    color: #ddd;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.specs li i {
+    color: #e63946;
+    width: 20px;
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-buy {
+    background-color: #fff;
+    color: #111;
+}
+
+.btn-buy:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transform: translateY(-3px);
+}
+
+.btn-cart {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-cart:hover {
+    background-color: #fff;
+    color: #111;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .product-details h1 {
+        font-size: 32px;
+    }
+
+    .product-container {
+        padding: 20px;
+    }
+}
+
+/* Notification Popup */
+.notification {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(40, 167, 69, 0.9);
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.notification.hidden {
+    transform: translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.notification a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 5px;
+}

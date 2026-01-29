@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - CamMart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+    <div class="main_box">
+
+        <!-- Product Details Container -->
+        <div class="product-container">
+            <div class="product-image">
+                <img id="p-image" src="" alt="Camera Image">
+            </div>
+            <div class="product-details">
+                <a href="index2.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Store</a>
+                <h1 id="p-name">Loading...</h1>
+                <p class="price" id="p-price">-</p>
+                <p class="desc" id="p-desc">Please wait while we load the product details.</p>
+
+                <ul class="specs" id="p-specs">
+                    <!-- Specs will be injected here -->
+                </ul>
+
+                <div class="actions">
+                    <button class="btn btn-buy">Buy Now</button>
+                    <button class="btn btn-cart" id="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification -->
+        <div id="cart-notification" class="notification hidden">
+            <p>Item added to cart, <a href="index5.html">Visit Cart</a></p>
+        </div>
+
+    </div>
+
+    <script src="script4.js"></script>
+</body>
+
+</html>

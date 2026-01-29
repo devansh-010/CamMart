@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamMart - Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="main_box"> <input type="checkbox" id="check" />
+        <div class="btn_one"> <label for="check" style="color: white"> <i class="fa-solid fa-bars"></i> </label> </div>
+        <div class="sidebar_menu">
+            <div class="logo"> <a href="#">CamMart</a> </div>
+            <div class="btn_two"> <label for="check" style="color: grey"> <i class="fa-solid fa-xmark"></i> </label>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li> <i class="fa-solid fa-image"></i> <a href="#">Gallery</a> </li>
+                    <li> <i class="fa-solid fa-arrow-up-right-from-square"></i> <a href="#">Shortcuts</a> </li>
+                    <li> <i class="fa-solid fa-photo-film"></i> <a href="#">Exhibits</a> </li>
+                    <li> <i class="fa-solid fa-calendar-days"></i> <a href="#">Events</a> </li>
+                    <li> <i class="fa-solid fa-store"></i> <a href="#">Store</a> </li>
+                    <li> <i class="fa-solid fa-phone"></i> <a href="#">Contact</a> </li>
+                    <li> <i class="fa-regular fa-comments"></i> <a href="#">Feedback</a> </li>
+                </ul>
+            </div>
+            <div class="social_media">
+                <ul>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="head">
+            <h1>CamMart</h1>
+        </div>
+
+        <div class="body">
+            <div class="filter">
+                <p class="heading">Filters</p>
+                <div class="parts">
+                    <p>Brands</p>
+                    <label class="row">
+                        <input type="checkbox" value="canon" class="brand-filter">
+                        <span class="box"></span>
+                        Canon
+                    </label>
+                    <label class="row">
+                        <input type="checkbox" value="sony" class="brand-filter">
+                        <span class="box"></span>
+                        Sony
+                    </label>
+                    <label class="row">
+                        <input type="checkbox" value="nikon" class="brand-filter">
+                        <span class="box"></span>
+                        Nikon
+                    </label>
+                    <label class="row">
+                        <input type="checkbox" value="fujifilm" class="brand-filter">
+                        <span class="box"></span>
+                        FUJIFILM
+                    </label>
+                    <label class="row">
+                        <input type="checkbox" value="panasonic" class="brand-filter">
+                        <span class="box"></span>
+                        Panasonic
+                    </label>
+                </div>
+                <div class="parts">
+                    <p>Categories</p>
+                    <label class="row">
+                        <input type="checkbox" value="dslr" class="category-filter">
+                        <span class="box"></span>
+                        DSLR
+                    </label>
+                    <label class="row">
+                        <input type="checkbox" value="mirrorless" class="category-filter">
+                        <span class="box"></span>
+                        Mirrorless
+                    </label>
+                </div>
+            </div>
+            <div class="products">
+                <p class="heading">Store</p>
+                <div class="pBody">
+                    <div class="product canon1 canon" data-brand="canon" data-category="mirrorless">
+                        <p class="camName">Canon EOS R10</p>
+                        <p class="camPrice">₹ 79,999</p>
+                        <button onclick="window.location.href='index4.html?id=canon_r10'">View Product</button>
+                    </div>
+                    <div class="product sony1 sony" data-brand="sony" data-category="dslr">
+                        <p class="camName">Sony Alpha-7 IV</p>
+                        <p class="camPrice">₹ 2,29,999</p>
+                        <button onclick="window.location.href='index4.html?id=sony_a7iv'">View Product</button>
+                    </div>
+                    <div class="product nikon1 nikon" data-brand="nikon" data-category="dslr">
+                        <p class="camName">Nikon Z6 II</p>
+                        <p class="camPrice">₹ 1,64,999</p>
+                        <button onclick="window.location.href='index4.html?id=nikon_z6ii'">View
+                            Product</button>
+                    </div>
+                    <div class="product fujifilm1 fujifilm" data-brand="fujifilm" data-category="mirrorless">
+                        <p class="camName">Fujifilm X-T5</p>
+                        <p class="camPrice">₹ 1,39,999</p>
+                        <button onclick="window.location.href='index4.html?id=fujifilm_xt5'">View
+                            Product</button>
+                    </div>
+                    <div class="product canon2 canon" data-brand="canon" data-category="dslr">
+                        <p class="camName">Canon EOS R5</p>
+                        <p class="camPrice">₹ 1,91,999</p>
+                        <button onclick="window.location.href='index4.html?id=canon_r5'">View Product</button>
+                    </div>
+                    <div class="product nikon1 nikon" data-brand="nikon" data-category="mirrorless">
+                        <p class="camName">Nikon Z50</p>
+                        <p class="camPrice">₹ 89,999</p>
+                        <button onclick="window.location.href='index4.html?id=nikon_z50'">View Product</button>
+                    </div>
+                    <div class="product sony1 sony" data-brand="sony" data-category="mirrorless">
+                        <p class="camName">Sony Alpha6700</p>
+                        <p class="camPrice">₹ 1,91,999</p>
+                        <button onclick="window.location.href='index4.html?id=sony_a6700'">View
+                            Product</button>
+                    </div>
+                    <div class="product canon2 canon" data-brand="canon" data-category="dslr">
+                        <p class="camName">Canon EOS R6 Mark II</p>
+                        <p class="camPrice">₹ 2,19,999</p>
+                        <button onclick="window.location.href='index4.html?id=canon_r6m2'">View
+                            Product</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-actions">
+            <a href="index5.html" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="log">
+                <a href="index3.html">Log in</a>
+                <span>/</span>
+                <a href="index3.html?action=signup">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
